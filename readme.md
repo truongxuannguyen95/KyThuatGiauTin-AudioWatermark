@@ -17,4 +17,5 @@
 - Username + password
 
 	+ admin : admin
-	+tester : 123456
+	
+	+ tester : 123456
