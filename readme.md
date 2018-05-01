@@ -16,6 +16,7 @@
 	
 - Username + password
 
-	+ admin : admin
-	
+	+ admin : admin	
 	+ tester : 123456
+
+* Liên hệ: 093757911 - Trương Xuân Nguyên
