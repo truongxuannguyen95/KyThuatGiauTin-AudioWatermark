@@ -1,0 +1,474 @@
+html, body{
+	height: 100%;
+	width: 97.5em;
+	font-family: 'Roboto Condensed', sans-serif; font-size:14px; color: #333; letter-spacing: 0.5px;
+}
+* {
+	margin: 0;
+	padding: 0
+}
+
+body{ background: url("img/music.jpg") fixed no-repeat; background-size: cover; }
+a{ text-decoration: none; }
+a:hover,a:focus,a:visited{ text-decoration: none; }
+
+#header{
+	z-index: 1001;
+	width: 97.5em;
+	height: 4.5em;
+	background: rgba(255,248,220,0.5);
+	background-size: cover;
+	background-repeat: none;
+	border: none;
+}
+
+#footer{
+	z-index: 1001;
+	width: 97.5em;
+	height: 3em;
+	margin-top: 30px;
+	background: rgba(255,248,220,0.5);
+	background-size: cover;
+	background-repeat: none;
+	border: none;
+}
+
+#footer .footer-title {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 100px;
+	font-family: 'Brush Script MT', cursive; font-size: 28px; font-weight: 600; color: #fff; white-space: nowrap;
+}
+
+#header .container{ height: 100%; }
+
+#header .header-title{
+	float: left;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#header .header-brand{
+	height: 100%;
+	margin: 0px;
+	margin-top: 18px;
+	padding: 0px;
+	padding-left: 10px;
+	font-family: 'Brush Script MT', cursive; font-size: 40px; font-weight: 600; color: #fff; white-space: nowrap;
+}
+
+#header .right{
+	float: right
+}
+
+#header .username{
+	float: right;
+	margin-right: 12px;
+	margin-top: 20px;
+	font-size: 16px; font-weight: 300; color: #fff;
+	cursor: default;
+}
+
+.btnUser {
+    list-style-type: none;
+    background-color: transparent;
+	float: left;
+	display: block;
+    color: white;
+    padding: 19px 16px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px
+}
+
+.btnUser:hover {
+	background-color: #111111;
+}
+
+.btnLoginSignin {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btnLoginSignin:hover {
+	background-color: #99FFCC;
+}
+
+img.logout{
+	float: right;
+	margin-top: 10px;
+	width: 10%;
+	cursor: pointer;
+}
+
+img.upFile{
+	float: right;
+	width: 9%;
+	cursor: pointer;
+	margin-top: -65px;
+	margin-left: 150px;
+}
+
+.lbName {
+    color: white;
+	margin-left: 100px;
+	width: 475px;
+    padding: 11px 8px 7px 8px;
+    font-family: Arial;
+	background-color: rgba(26, 0, 0, 0.5);
+}
+
+.lbNameInfo {
+	color: white;
+	margin-left: 100px;
+	margin-right: 10px;
+	width: 90px;
+    padding: 5px;
+    font-family: Arial;
+	background-color: #4CAF50;
+}
+
+.lbReport {
+	color: white;
+	padding: 10px;
+	font-family: Arial;
+	background-color: #4CAF50;
+	width: 100%;
+	text-align: center
+}
+
+.inputInfo {
+	padding: 3px;
+	width: 370px;
+	color: blue;
+}
+
+.btnUpload {
+	background-color: #FF33FF;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0 0 280px;
+    border: none;
+	outline: none;
+    cursor: pointer;
+    width: 25%;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+.btnUpload:hover {
+	background-color: #FF3333;
+}
+
+.btnUpload:disabled {
+	background-color: #333333;
+}
+
+.btnUpload:focus {
+	cursor: wait;
+}
+
+.modal-content-report {
+    background-color: #fefefe;
+    margin: 10% auto 1% auto;
+    border: 1px solid #888;
+    width: 25%;
+	height: 150px;
+}
+
+.btnCancel {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btnCancel:hover {
+	background-color: #FF9933;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.imgcontainerForm {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.containerForm {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content-login {
+    background-color: #fefefe;
+    margin: 1% auto 1% auto;
+    border: 1px solid #888;
+    width: 32.5%;
+	height: 460px;
+}
+
+.modal-content-login-error {
+    background-color: #fefefe;
+    margin: 1% auto 1% auto;
+    border: 1px solid #888;
+    width: 32.5%;
+	height: 490px;
+}
+
+.modal-content-signin {
+    background-color: #fefefe;
+    margin: -1% auto 1% auto;
+    border: 1px solid #888;
+    width: 32.5%;
+	height: 520px;
+}
+
+.modal-content-signin-error {
+    background-color: #fefefe;
+    margin: -1% auto 1% auto;
+    border: 1px solid #888;
+    width: 32.5%;
+	height: 550px;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+#middle{
+	width: 97.5em; 
+	height: 32.3em;
+	z-index: 1001
+}
+
+#content{
+	z-index: 1001;
+	margin-top: 0px;
+	margin-left: 300px;
+	width: 750px;
+	height: 28em;
+	background-color: rgba(255, 255, 255, 0.8);
+	overflow: hidden;
+}
+
+#tableBuySong button {
+    background-color: #00CC99;
+    color: white;
+    border: none;
+	outline: none;
+    cursor: pointer;
+    width: 60%;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+#tableBuySong button:hover {
+    background-color: #99FFFF;
+	color: black;
+}
+
+#tableBuySong button:disabled {
+    background-color: #FF3300;
+	color: white;
+	cursor: default
+}
+
+#viewContent {
+	z-index: 1001;
+	margin-top: 50px;
+	margin-left: 300px;
+	width: 750px;
+	height: 3em;
+	background-color: rgba(26, 0, 0, 0.5);
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btnViewContent{
+	list-style-type: none;
+    background-color: transparent;
+	float: left;
+	display: block;
+    color: white;
+    padding: 19px 16px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px
+}
+
+#viewContent button:hover{
+    background-color: #FF6699;
+}
+
+#viewContent button:focus{
+    background-color: #9999CC;
+}
+
+.btnClicked{
+	list-style-type: none;
+    background-color: #9999CC;
+	float: left;
+	display: block;
+    color: white;
+    padding: 19px 16px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px
+}
+
+.lbShowMess {
+    color: blue;
+    padding: 5px;
+	font-size: 20px;
+    font-family: Arial;
+	background: transparent;
+}
+
+.lbShowMessEmpty {
+    color: red;
+    padding: 5px;
+	font-size: 20px;
+    font-family: Arial;
+	background: transparent;
+}
+
+table{
+	width: 100%; 
+}
+
+table thead, tr {
+	width: 100%;
+}
+
+table tbody {
+	width: 100%;
+	height: 340px;
+	overflow-y: scroll;
+	overflow-x: hidden
+}
+
+table thead tr{
+	width: 97.5%;
+}
+
+table thead, tbody, tr, td, th{
+	display: inline-block;
+}
+
+table thead{
+	background: #FF9933;
+	color: white;
+}
+
+table tbody td, table thead > tr> th{
+	float: left;
+	border-bottom-width: 0;
+}
+
+table tbody>tr>td, tbody>tr>th, thead>tr>th{
+	padding: 8px;
+	height: 50px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.odd {
+	background: white;
+	color: black;
+}
+
+.even {
+	background: black;
+	color: white;
+}
+
+.oddND {
+	background: #555555;
+	color: white;
+}
