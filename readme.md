@@ -7,6 +7,8 @@
 
 * Cách thức hoạt động:
 
+- Đăng ký user (mặc định là quyền "user").
+
 - Với user có quyền là admin sẽ có tất cả chức năng ở dưới và sẽ được upload file nhạc (wav -> file này sẽ không có chữ ký khi up lên). 
 
 - Với user có quyền khác admin:
